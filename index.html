@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container"><!-- Main container for the To-Do List -->
+        <div class="todo-box">
+            <header class="heading">To Do List</header>
+            <div class="inputbox">
+                <i class="icon uil uil-file-check-alt"></i><!-- Icon representing a file -->
+                <input type="text" placeholder="Type your To Do List">
+                <i id="addbutton" class="icon uil uil-plus"></i><!-- Icon for adding tasks -->
+            </div>
+            <div class="clckbutton">
+                <span class="btn clearall">Clear all tasks</span>
+                <span class="btn clearcomtask">Clear Completed tasks</span>
+            </div>
+            <hr>
+            <ul class="itemlist"></ul><!-- Unordered list for storing tasks -->
+            <hr>
+            <div class="clckbutton">
+                <span>
+                    <span class="pendingTasks"></span><!-- Area for displaying the number of tasks -->
+                    tasks left</span>
+                <div>
+                    <span class="pendingTasks" >All</span>
+                    <span class="btn complete">Show Completed</span>
+                    <span class="btn uncomplete">Show Incomplete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

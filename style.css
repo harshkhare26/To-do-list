@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styling TodoList body */
+.container {
+    background: #e5f6fd; /* Light Blue background */
+    max-width: 450px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 30px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.todo-box {
+    background-color: #ffefd5; /* Light Orange background */
+    padding: 20px;
+    box-shadow: 0px 0px 5px 3px #ccc;
+}
+
+/* Updated positioning of the TodoList heading */
+.heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* styling input-box, hover, and focus */
+.inputbox {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 8px;
+    background: #ffd9e7; /* Light Pink background */
+}
+
+.inputbox input {
+    width: 90%;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Updated icon positioning */
+.icon {
+    font-size: 24px;
+    padding: 12px;
+    color: #666;
+    flex: 1;
+}
+
+/* Plus button hide when you didn't type */
+#addbutton {
+    display: none;
+}
+
+.clckbutton {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 20px;
+}
+
+/* Styling horizontal line dotted */
+hr {
+    border: none;
+    border-top: 1px dotted #ccc;
+}
+
+/* Styling applied to the todo-list when tasks are added dynamically via JavaScript */
+.itemlist li {
+    position: relative;
+    background-color: #f5f5f5; /* Light Gray background */
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    word-break: break-all;
+    border-radius: 5px;
+}
+
+/* Styling for the Delete button used to remove tasks */
+.itemlist li .del {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #a0522d; /* Brown background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* Delete button visible when you hover on a task */
+.itemlist li:hover .del {
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Extra styling */
+.pendingTasks {
+    color: #333;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+/* Styling for elements such as "Show Completed," "Show Incomplete," "Clear Completed," and "Clear All Tasks" */
+.pendingTasks,
+.btn.complete,
+.btn.uncomplete,
+.btn.clearall,
+.btn.clearcomtask {
+    display: inline-block;
+    padding: 2px 5px; 
+    font-size: 14px; 
+    border: 1px solid #00a3e0;
+    background-color: #00a3e0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Hover effect for the elements */
+.pendingTasks:hover,
+.btn.complete:hover,
+.btn.uncomplete:hover,
+.btn.clearall:hover,
+.btn.clearcomtask:hover {
+    background-color: #0077b3;
+}
+
